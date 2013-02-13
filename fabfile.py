@@ -37,6 +37,9 @@ def deploy(host=None, fake=False, update=True):
     make migrations, restart wsgi daemon
     """
     if fake=='True': fake=True
+    if not fake:
+        deploy(host=host, fake=True, update=update)
+        prompt('Press <Enter> to continue or <Ctrl+C> to cancel.')  # тут можно прервать init
     if host is not None:
         local_run('git push -f %s %s'%(host['name'], env.production_remote_branch), fake=fake)
         if update: update_site(host, fake=fake)

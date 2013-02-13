@@ -9,6 +9,25 @@ This project is in early Alpha!
 Use it with caution. Code review advised before use.
 Questions, suggestions and pull requests are welcome!
 
+Instalation:
+------------
+I know it's Ugly but thats how it is for now.
+Just copy all files into your project.
+Edit settings for a project in fabfile.py and Makefile.def.sample.
+Install requirements.
+
+Usage:
+------
+Init remote repos (shows commands before execution)
+```
+fab remote_init
+```
+
+Update remote repos with latest code
+```
+fab deploy
+```
+
 TODO:
 -----
 - [ ] initial deployment ability (done at 80%)
