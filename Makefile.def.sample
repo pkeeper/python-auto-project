@@ -1,0 +1,7 @@
+# Here overrided constants for a site
+
+SHELL=/usr/local/bin/bash
+MAKE=gmake
+# if you not using virtualenv comment following lines
+PY=env/bin/python
+PIP=env/bin/pip
